@@ -30,14 +30,35 @@ The SinatraAPIBase project includes:
 Getting Started
 ==========
 
-### (Important) Git Submodules
+Start by pulling *a copy* of this project down to your local machine. If you are intending to use this project for its purpose, and not planning to submit a pull request, you will be best off downloading a zip file of this repo instead of doing a normal ```git clone```. This way you can easily add the project to your own git repo.
+
+### Git Submodules
 There are git submodules at play for the Vagrant setup. To get them, run:
 
 ```git submodule init && git submodule update```
 
 Note: Don't update the submodule repositories.
 
-### Additional steps coming soon...
+### Configs
+The next step is a bit of configuration. There are two files you will want to focus on. 
+
+First, create a ```/config/db.yml``` file using the template provided in ```/config/db.yml_example```. Go ahead and create whatever database name, user name, and password you want. Do keep in mind that this project is using MySQL, so don't change the adapter value.
+
+Second, using those same values, go update the ```bootstrap.sh``` file. What this file does is drives the creation of your database when vagrant spins up.
+
+Now, start your vagrant box (this will take a while. Go brew some coffee, or beer in some cases...):
+
+```vagrant up```
+
+That's it! Load up [http://localhost:8888/](http://localhost:8888/) in your favorite browser, and have fun!
+
+### Not Your Mamma's Sinatra Index page...
+
+When you go to [http://localhost:8888/](http://localhost:8888/), you aren't going to see the standard "Sinatra doesn't know this diddy" message. Rest assured that it's still there, but just not for index.html. This project uses source2swagger for all documentation. Go check out their docs for a 'how to', and take note that we've already stubbed in the root not in ```/routes/main.rb```. Once you have an end-point documented, all you need to do is run:
+
+```rake swagger```
+
+And then reload the index. Pretty slick huh?
 
 
 ### Connect Vagrant MySQL Via MySQL Workbench
