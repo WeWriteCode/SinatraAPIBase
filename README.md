@@ -1,7 +1,7 @@
 WeWriteCode SinatraAPIBase
 ==========
 
-The SinatraAPIBase project is a very simple, self contained, template project that we use to create APIs in Sinatra. This will evolve over time, and we would love additional base features / fixes to submitted by you.
+The SinatraAPIBase project is a very simple, self contained, template project that we use to create APIs in [Sinatra](http://www.sinatrarb.com/). This will evolve over time, and we would love additional base features / fixes to submitted by you.
 
 ### What This Project Includes
 
@@ -10,12 +10,12 @@ This repository is intended to be a "pull and run" project. As such, we have imp
 - Apache2
 - MySQL
 - Passenger
-- rbenv
-- ruby-build
+- [rbenv](https://github.com/sstephenson/rbenv)
+- [ruby-build](https://github.com/sstephenson/ruby-build)
 
-The SinatraAPIBase project inclues
+The SinatraAPIBase project includes:
 
-- A multi-file Sinatra application
+- A multi-file [Sinatra](http://www.sinatrarb.com/) application
 - ActiveRecord support via [sinatra-activerecord](https://github.com/janko-m/sinatra-activerecord) (migrations and general rake commands)
 - Auto-generated functional documentation via [source2swagger](https://github.com/mkrogemann/source2swagger)
 - MySQL data storage (although ActiveRecord allows for most any database)
