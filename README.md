@@ -54,7 +54,7 @@ That's it! Load up [http://localhost:8888/](http://localhost:8888/) in your favo
 
 ### Not Your Mamma's Sinatra Index page...
 
-When you go to [http://localhost:8888/](http://localhost:8888/), you aren't going to see the standard "Sinatra doesn't know this diddy" message. Rest assured that it's still there, but just not for index.html. This project uses source2swagger for all documentation. Go check out their docs for a 'how to', and take note that we've already stubbed in the root not in ```/routes/main.rb```. Once you have an end-point documented, all you need to do is run:
+When you go to [http://localhost:8888/](http://localhost:8888/), you aren't going to see the standard "Sinatra doesn't know this diddy" message. Rest assured that it's still there, but just not for index.html. This project uses source2swagger for all documentation. Go check out their docs for a 'how to', and take note that we've already stubbed in the root in ```/routes/main.rb```. Once you have an end-point documented, all you need to do is run:
 
 ```rake swagger```
 
