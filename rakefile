@@ -1,0 +1,11 @@
+require "sinatra/activerecord/rake"
+require "./app"
+
+task(:environment) do
+  env = ENV["RACK_ENV"] ? ENV["RACK_ENV"] : "development"
+  ActiveRecord::Base.establish_connection(YAML::load_file('config/db.yml')[env])
+end
+
+task :swagger do
+  system 'bundle exec source2swagger -i routes -e "rb" -c "##~" -o public/api'
+end

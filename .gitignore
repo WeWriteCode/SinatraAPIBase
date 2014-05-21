@@ -32,3 +32,11 @@ build/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+# ignore fcgi log file
+public/fastcgi.log
+
+# don't commit vagrant box folder
+.vagrant
+
+config/db.yml
