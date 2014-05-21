@@ -37,6 +37,8 @@ There are git submodules at play for the Vagrant setup. To get them, run:
 
 Note: Don't update the submodule repositories.
 
+### Additional steps coming soon...
+
 
 ### Connect Vagrant MySQL Via MySQL Workbench
 
