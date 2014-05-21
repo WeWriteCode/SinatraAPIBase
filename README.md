@@ -16,14 +16,14 @@ This repository is intended to be a "pull and run" project. As such, we have imp
 The SinatraAPIBase project inclues
 
 - A multi-file Sinatra application
-- ActiveRecord support via sinatra-activerecord (migrations and general rake commands)
-- Auto-generated functional documentation via source2swagger ```rake swagger```
+- ActiveRecord support via [sinatra-activerecord](https://github.com/janko-m/sinatra-activerecord) (migrations and general rake commands)
+- Auto-generated functional documentation via [source2swagger](https://github.com/mkrogemann/source2swagger)
 - MySQL data storage (although ActiveRecord allows for most any database)
 - Automatic file reloading via sinatra-reloader
 
 ### Planned Additions
 
-- Fully functional oAuth server support (via songkick-oauth2-provider ideally)
+- Fully functional oAuth server support (via [songkick-oauth2-provider](https://github.com/songkick/oauth2-provider) ideally)
 - Test templates
 - Your feature here...
 
@@ -44,6 +44,4 @@ Note: Don't update the submodule repositories.
 
 First, ssh into your vagrant edit /etc/mysql/my.cnf and comment out the "bind" line. roughly line 63
 
-Then you can do this:
-
-http://www.vmichnowicz.com/blog/entry/get_mysql_workbench_to_connect_to_mysql_running_with_vagrant
+Then you can do [this](http://www.vmichnowicz.com/blog/entry/get_mysql_workbench_to_connect_to_mysql_running_with_vagrant)
