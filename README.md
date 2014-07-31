@@ -32,6 +32,10 @@ Getting Started
 
 Start by pulling *a copy* of this project down to your local machine. If you are intending to use this project for its purpose, and not planning to submit a pull request, you will be best off downloading a zip file of this repo instead of doing a normal ```git clone```. This way you can easily add the project to your own git repo.
 
+Once you have a copy of the project on your machine, initialize your git repo
+
+```git init```
+
 ### Git Submodules
 There are git submodules at play for the Vagrant setup. To get them, run:
 
